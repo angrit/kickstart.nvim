@@ -482,6 +482,9 @@ require('lazy').setup({
     'mrcjkb/rustaceanvim',
     version = '^6', -- Recommended
     lazy = false, -- This plugin is already lazy
+
+    vim.keymap.set('n', '<leader>rd', '<cmd>RustLsp renderDiagnostic<CR>', { desc = '[R]ust [D]agnostic, helpful info' }),
+    vim.keymap.set('n', '<leader>re', '<cmd>RustLsp explainError<CR>', { desc = '[R]ust [E]xplain error' }),
   },
 
   -- LSP Plugins
