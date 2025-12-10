@@ -462,6 +462,21 @@ require('lazy').setup({
     end,
   },
 
+  -- NeoVim Tree
+  {
+    'nvim-tree/nvim-tree.lua',
+    version = '*',
+    lazy = false,
+    dependencies = {
+      'nvim-tree/nvim-web-devicons',
+    },
+    config = function()
+      require('nvim-tree').setup {}
+    end,
+
+    vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { desc = 'Open/Close the file explorer' }),
+  },
+
   -- LSP Plugins
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
