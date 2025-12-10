@@ -477,6 +477,13 @@ require('lazy').setup({
     vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { desc = 'Open/Close the file explorer' }),
   },
 
+  -- Rust additional features
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^6', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
+
   -- LSP Plugins
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
