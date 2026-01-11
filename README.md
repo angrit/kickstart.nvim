@@ -97,7 +97,17 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${env:LOCALAPPDATA}\nv
 
 ### Post Installation
 
-Start Neovim
+Add fish Environment configuration
+in `~/.config/fish/config.fish`
+```fish
+# NeoVim configuration
+set -gx NVIM_APPNAME nvim/kickstart.nvim
+#set -gx NVIM_APPNAME nvim/NvChad
+```
+
+By using this config you can switch between configurations. Although the others are nice, i have adopted kickstart.
+
+### Start Neovim
 
 ```sh
 nvim
